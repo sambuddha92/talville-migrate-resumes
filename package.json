@@ -9,6 +9,7 @@
   "author": "Sambuddha Adhikari",
   "license": "UNLICENSED",
   "dependencies": {
+    "colors": "^1.4.0",
     "googleapis": "^64.0.0",
     "humanize-duration": "^3.24.0",
     "node-fetch": "^2.6.1"

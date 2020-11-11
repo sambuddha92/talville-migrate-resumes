@@ -1,4 +1,5 @@
-const { google } = require("googleapis");
+const { google } = require("googleapis"),
+colors = require("colors/safe");
 
 const util = require("./util");
 
@@ -39,7 +40,7 @@ const setOutput = async (id, fileUrl) => {
     },
   });
 
-  console.log(`New resume URL for ${id} is ${fileUrl}.`)
+  console.log(colors.gray(`${id}: ${fileUrl}.`))
 };
 
 module.exports = {
