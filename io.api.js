@@ -28,7 +28,7 @@ const getInputs = async () => {
   }
 };
 
-const setOutput = async (id, fileUrl) => {
+const setOutput = async (id, fileUrl, count) => {
   const sheets = google.sheets({ version: "v4", auth: team_tlvl });
 
   await sheets.spreadsheets.values.append({
@@ -40,7 +40,7 @@ const setOutput = async (id, fileUrl) => {
     },
   });
 
-  console.log(colors.gray(`${id}: ${fileUrl}.`))
+  console.log(colors.gray(`${count}. ${id}: ${fileUrl}.`))
 };
 
 module.exports = {

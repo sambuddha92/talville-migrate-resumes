@@ -36,7 +36,7 @@ const main = async () => {
         resumeDestinationFolderId
       );
       const fileUrl = await uploadFileToDrive(uploadParams);
-      await setOutput(input[0], fileUrl);
+      await setOutput(input[0], fileUrl, i+1);
     }
     console.log(colors.green("\n..."));
     console.log(colors.brightCyan(`\nProcess ended at ${calcTime(5.5)}\n`));
