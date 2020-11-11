@@ -6,6 +6,7 @@ const SCOPES = [
   "https://www.googleapis.com/auth/drive",
   "https://www.googleapis.com/auth/drive.file",
   "https://www.googleapis.com/auth/drive.appdata",
+  "https://www.googleapis.com/auth/spreadsheets",
 ];
 
 const team_tlvl_credentials = require(path.resolve(
