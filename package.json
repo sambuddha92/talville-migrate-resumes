@@ -9,8 +9,8 @@
   "author": "Sambuddha Adhikari",
   "license": "UNLICENSED",
   "dependencies": {
-    "express": "^4.17.1",
     "googleapis": "^64.0.0",
+    "humanize-duration": "^3.24.0",
     "node-fetch": "^2.6.1"
   }
 }
