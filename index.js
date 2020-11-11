@@ -12,8 +12,18 @@ const main = async () => {
     if (totalInputs === 0) {
       return console.log("No inputs");
     }
-    console.log(`It will take approximately ${humanizeDuration(totalInputs*5000)} to process ${totalInputs} inputs.`)
-    console.log(`Process started at ${calcTime(5.5)}`);
+    console.log(`${totalInputs} inputs found.`)
+    console.log("\n");
+    console.log(`It will take approximately ${humanizeDuration(totalInputs*5000)} to process these`)
+    console.log("\n");
+    console.log(`Process expected to end at ${calcTime(5.5 + totalInputs*5000/3600000)}`);
+    console.log("Starting ...")
+    console.log("*");
+    console.log("*");
+    console.log("*");
+    console.log("*");
+    console.log("*");
+    console.log("\n");
     for (var i = 0; i < totalInputs; i++) {
       let input = inputs[i];
       const uploadParams = await getUploadParams(
@@ -23,6 +33,12 @@ const main = async () => {
       const fileUrl = await uploadFileToDrive(uploadParams);
       await setOutput(input[0], fileUrl);
     }
+    console.log("\n");
+    console.log("*");
+    console.log("*");
+    console.log("*");
+    console.log("*");
+    console.log("*");
     console.log(`Process ended at ${calcTime(5.5)}`);
   } catch (error) {
     console.error(error);

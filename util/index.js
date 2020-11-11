@@ -5,8 +5,6 @@ const calcTime = (offset) => {
   return nd.toLocaleString();
 };
 
-calcTime(5.5);
-
 module.exports = {
   client: require("./_client"),
   calcTime
