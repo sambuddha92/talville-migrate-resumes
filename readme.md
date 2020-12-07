@@ -4,28 +4,28 @@
 3. Run the command `npm install` to install dependencies.
 4. Create a new directory named config in the root directory of the project.
 ## Get Credentials
-### For teamtalville@gmail.com
-* Log in to [Google Developer Console](https://console.cloud.google.com/) using the teamtalville@gmail.com email address.
+### For gmail
+* Log in to [Google Developer Console](https://console.cloud.google.com/) using the gmail address.
 * From the navigation bar, select the project named "Talville Root".
 * From the left hand panel, select APIs & Services > Credentials.
-* Click on the service account talville-bot@talville-root.iam.gserviceaccount.com or just click the edit(pencil) icon on the right hand side of the serivce account row.
+* Click on the service account or just click the edit(pencil) icon on the right hand side of the serivce account row.
 * Select Add Key > Create New Key. On the pop up window, make sure that the JSON option is selected.
 * Click create to download the json file.
 * Move or directly store the file inside the config directory.
 * rename the file to `team_tlvl.credentials.json`.
 
-### For talville.com
+### For talville
 * Log in to [Google Developer Console](https://console.cloud.google.com/) using your talville email address.
 * From the navigation bar, select the project named "Migrate".
 * From the left hand panel, select APIs & Services > Credentials.
-* Click on the service account resumebot@migrate-resumes.iam.gserviceaccount.com or just click the edit(pencil) icon on the right hand side of the serivce account row.
+* Click on the service account or just click the edit(pencil) icon on the right hand side of the serivce account row.
 * Select Add Key > Create New Key. On the pop up window, make sure that the JSON option is selected.
 * Click create to download the json file.
 * Move or directly store the file inside the config directory.
 * rename the file to `tlvl.credentials.json`.
 
 ## Set inputs
-* Go to [Google Drive](drive.google.com) using teamtalville@gmail.com email address.
+* Go to [Google Drive](drive.google.com) using gmail address.
 * Locate a folder named "Dump" and open the Spreadsheet named "Resume Migration" inside that folder.
 * On the "To be Processed" sheet, all the inputs are stored.
 * Already processed inputs are colored green and currently processing inputs are colored yellow.
